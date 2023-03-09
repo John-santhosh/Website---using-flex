@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400&display=swap');
+
+:root{
+    --dark-blue: #1F2937;
+    --dark-bg: #fff;
+    --light-bg: #1F2937;
+
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+p{
+    font-weight: 500;
+}
+.nav{
+    /* margin: 2rem auto; */
+    background: var(--dark-blue);
+    padding: 1rem 0 2rem;
+    position: sticky;
+    top: 0;
+    color: var(--dark-bg)
+}
+ul{
+    list-style: none;
+}
+li{
+    flex: 2 1 auto
+}
+nav div:first-child {
+    flex:10 4 auto;
+}
+
+/* hero  */
+.hero {
+    background: var(--dark-blue);
+    color: var(--dark-bg);
+    padding: 5rem;
+}
+
+.hero .flex{
+    gap: 2rem; 
+}
+
+/* targeting first flex item of hero */
+.hero .items:first-of-type{
+    flex: 2 1 300px;
+}
+
+/* targeting last flex item of hero (image)*/
+.hero .items:last-of-type{
+    flex-basis: 350px;
+    flex-grow: 1;
+}
+.hero .flex div:last-child img{
+    width: 100%;
+}
+
+/* products */
+
+.products .flex{
+    background: darkolivegreen;
+    gap: 20px;
+}
+.products .items{
+    flex: 1 1 200px;
+    background: red;
+}
